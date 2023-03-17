@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #03263f;
+    font-family: 'poppins',sans-serif;
+}
+
+header{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header img{
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    animation:image 1s infinite;
+}
+@keyframes image{
+    0%{
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+    }
+    100%{
+        box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+}
+header h1{
+    color: white;
+    margin: 1.5rem 0;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+}
+header p{
+    color: white;
+}
+.arrow{
+    color: white;
+    margin-top: 5rem;
+    font-size: 5rem;
+    animation:arrow 6s ease-in-out infinite;
+}
+@keyframes arrow{
+    0%{
+        color:#3c6382;
+    }
+    50%{
+        color:#0a3d62;
+    }
+    100%{color:#3c6382;
+    }
+}
+.container{
+    width: 100%;
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.8fr 0.2fr;
+    gap: 1rem;
+    grid-template-areas: "profile profile skill skill"
+                        "education education education language"
+                        "contact experience experience experience" ;
+                        padding: 2rem;
+
+}
+.profile{
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    grid-area: profile;
+  text-align: justify;
+}
+.profile h2{
+    margin: 2rem;
+    text-align: center;
+}
+.profile p{
+    letter-spacing: 0.8%;
+    padding: 0.3rem 1rem;
+    line-height: 2.2rem;
+}
+.profile a{
+    text-decoration: none;
+    padding: 0.5rem 0.7rem;
+    background-color: #0a3d62;
+    color: white;
+}
+.skill{
+    background-color: blue;
+    color: black;
+    padding: 2rem;
+    grid-area: skill;
+   
+
+}
+.skill h2{
+    margin-bottom: 2rem;
+}
+.skill div{
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+.skill div progress[value]{
+    width: 100%;
+    height: 0.3rem;
+}
+.education{
+    
+    background-color: blue;
+    color: black;
+    padding: 2rem;
+    grid-area: education;
+
+}
+.education h2{
+    text-decoration: underline;
+    margin-bottom: 2rem;
+}
+.education h3{
+    margin-bottom: 0.8rem;
+    
+}
+.education a{
+    color: black;
+    padding: 0.5rem;
+    background-color: white;
+    text-decoration: none;
+    font-weight: 1rem;
+
+}
+.language{
+    background-color: brown;
+    color:black;
+    padding: 2rem;
+    grid-area: language;
+
+}
+.language li{
+    padding: 1rem;
+}
+.contact{
+    background-color: brown;
+    color:black;
+    padding: 2rem;
+    grid-area: contact;
+
+}
+.contact h2{
+    margin-bottom: 2rem;
+}
+.contact a{
+    text-decoration: none;
+   color: black;
+   cursor: pointer;
+
+}
+.contact a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.experience{
+    background-color: blue;
+    color: black;
+    padding: 2rem;
+    grid-area: experience;
+
+}
+.experience h2, h4{
+    margin-bottom: 1rem;
+}
+.experience .github a{
+    color: black;
+}
+footer{
+    background-color: white;
+    padding: 4rem;
+}
+footer a img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+}
+footer h3{
+    color: yellowgreen;
+    text-decoration: underline;
+}
